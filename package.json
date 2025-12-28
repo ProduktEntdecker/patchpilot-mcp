@@ -1,0 +1,33 @@
+{
+  "name": "patchpilot-mcp",
+  "version": "0.1.0",
+  "description": "Security scanner for vibe coders - MCP server that checks npm packages for vulnerabilities",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "patchpilot-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "security",
+    "npm",
+    "vulnerabilities",
+    "osv"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "~5.8.0",
+    "tsx": "^4.0.0"
+  }
+}
